@@ -166,3 +166,160 @@ h1{
   color: black;
 }
 
+.solicitudes {
+  width: min(1200px, 94%);
+  margin: 40px auto;
+}
+
+/* Título y enlace */
+.encabezado-solicitudes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.encabezado-solicitudes h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.encabezado-solicitudes a {
+  color: #2f6e20;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.encabezado-solicitudes a:hover {
+  text-decoration: underline;
+}
+
+.lista-solicitudes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.tarjeta-solicitud {
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  align-items: center;
+  gap: 34px;
+
+  min-height: 195px;
+  padding: 24px 20px;
+
+  background-color: #ffffff;
+  border: 1.5px solid #111111;
+  border-radius: 13px;
+}
+
+.tarjeta-solicitud img {
+  width: 165px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contenido-tarjeta {
+  min-width: 0;
+}
+
+.contenido-tarjeta h3 {
+  margin: 0 0 22px;
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #111111;
+}
+
+.contenido-tarjeta p {
+  margin: 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 17px;
+  color: #111111;
+}
+
+/* Etiquetas */
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+.etiquetas span {
+  padding: 5px 14px;
+  border: 1.5px solid #111111;
+  border-radius: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.ver-detalles {
+  display: block;
+  color: #2f6e20;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ver-detalles:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 950px) {
+  .lista-solicitudes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .solicitudes {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .encabezado-solicitudes {
+    margin-bottom: 30px;
+  }
+
+  .encabezado-solicitudes h2 {
+    font-size: 21px;
+  }
+
+  .encabezado-solicitudes a {
+    font-size: 16px;
+  }
+
+  .tarjeta-solicitud {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .tarjeta-solicitud img {
+    width: 100%;
+    height: 190px;
+  }
+
+  .contenido-tarjeta h3 {
+    margin-bottom: 12px;
+  }
+
+  .ver-detalles {
+    text-align: left;
+  }
+}

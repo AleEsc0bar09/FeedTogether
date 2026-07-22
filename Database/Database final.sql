@@ -39,6 +39,8 @@ calificacion TINYINT NOT NULL,
 comentario TEXT NOT NULL,
 
 fecha_feedback DATETIME DEFAULT CURRENT_TIMESTAMP
+
+
 );
 
 CREATE TABLE compromisos_donacion(
@@ -58,6 +60,8 @@ estado ENUM(
  'completado',
  'cancelado'
  ) DEFAULT 'pendiente'
+
+ 
  );
  
  CREATE TABLE solicitudes(

@@ -46,8 +46,10 @@ nav ul li a{
   font-size: 18px;
 }
  
- #logo{
-  display: flex;
+ header a img{
+  height: 100px;
+  width: auto;
+  object-fit: contain;
   cursor: pointer;
  }
 

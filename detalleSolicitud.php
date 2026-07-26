@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 
     <!--css-->
-    <link rel="styleesheet" href="css/stle.css">
+    <link rel="styleesheet" href="css/css-comun-nav.css">
+    <link rel="stylesheet" href="css
 </head>
 <body>
     <!--bootstrap js-->

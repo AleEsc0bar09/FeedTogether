@@ -9,6 +9,7 @@
 
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css-comun-nav.css">
 </head>
 <body>
     <!--bootstrap js-->
@@ -17,16 +18,19 @@
     <!--java-->
     <script src="javascript/script.js"></script>
     
-    <header>
+        <header class="navbar">
+            <div>
+                <img class="logo" src="componentes/imag barra/logo.png" alt="logo">
+            </div>
+            <nav>
+                <a href="solicitudes.php">Solicitudes</a>
+                <a href="voluntariados.php">Voluntariados</a>
+                <button>Iniciar sesión</button>
+            </nav>
+        </header>
+        <main class="contenedor-com">
         
-        <nav>
-            <ul class="menu">
-                <li><a class="link" href="solicitudes.php">Solicitudes</a></li>
-                <li><a class="link" href="voluntariados.php">Voluntariados</a></li>
-                <li><a class="link" href="login.php">Iniciar sesión</a></li>
-            </ul>
-        </nav>
-    </header>
+        </main>
 
 
 </body>

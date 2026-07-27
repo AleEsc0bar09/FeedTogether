@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body style="background-color: ;">
     <h1 class="text-center mt-5 h1">¡Hora de crear tu nueva cuenta!</h1>
 
-    <div class="card m-1">
+    <div class="card m-3 rounded shadow">
       <div class="row g-0">
         <div class="card-body">
           <form class="m-2">
@@ -27,8 +27,8 @@
               <input
                 type="text"
                 class="form-control"
-                name=""
-                id=""
+                name="nombreUsuario"
+                id="nombreUsuario"
                 aria-describedby="helpId"
                 placeholder=""
               />
@@ -42,8 +42,8 @@
               <input
                 type="email"
                 class="form-control"
-                name=""
-                id=""
+                name="emailRegistro"
+                id="emailRegistro"
                 aria-describedby="emailHelpId"
                 placeholder="email@mail.com"
               />
@@ -57,8 +57,8 @@
               <input
                 type="text"
                 class="form-control"
-                name=""
-                id=""
+                name="telRegistro"
+                id="telRegistro"
                 aria-describedby="helpId"
                 placeholder=""
               />
@@ -72,8 +72,8 @@
               <input
                 type="password"
                 class="form-control"
-                name=""
-                id="pwd"
+                name="pwdRegistro"
+                id="pwdRegistro"
                 placeholder="********"
               />
             </div>
@@ -82,8 +82,8 @@
               <label for="" class="form-label">Acerca de ti</label>
               <textarea
                 class="form-control bs-tooltip-auto"
-                name=""
-                id=""
+                name="aboutRegistro"
+                id="aboutRegistro"
                 rows="3"
               ></textarea>
             </div>
@@ -190,6 +190,13 @@
                 aria-describedby="fileHelpId"
               />
             </div>
+            <button
+              type="submit"
+              class="btn btnRegistro"
+            >
+              Crear cuenta
+            </button>
+            
           </form>
         </div>
       </div>

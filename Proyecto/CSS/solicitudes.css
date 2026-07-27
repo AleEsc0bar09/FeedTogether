@@ -1,0 +1,368 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#encabezado-principal {
+    width: 100%;
+    min-height: 118px;
+    padding: 10px 20px;
+    background-color: #ff8c2a;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+#logo-principal {
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
+#menu-principal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#menu-principal a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+#menu-principal #boton-iniciar {
+    padding: 18px 22px;
+    border-radius: 16px;
+    background-color: #4f981f;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.enlace-menu {
+    color: #000000;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.enlace-menu:hover {
+    text-decoration: underline;
+}
+
+.boton-sesion {
+    padding: 18px 22px;
+
+    border-radius: 16px;
+    background-color: #4d971f;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.boton-sesion:hover {
+    background-color: #3d7d17;
+}
+
+.contenido-principal {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 10px 0 60px;
+}
+
+.contenido-principal h1 {
+    margin: 0 0 20px;
+    font-size: 38px;
+}
+
+.buscador {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 35px;
+    padding: 0 24px;
+
+    border: 2px solid #111111;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    box-sizing: border-box;
+}
+
+.buscador input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    color: #222222;
+    font-size: 25px;
+}
+
+.buscador input::placeholder {
+    color: #777777;
+}
+
+.icono-buscar {
+    position: relative;
+
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid #111111;
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+.icono-buscar::after {
+    content: "";
+
+    position: absolute;
+    right: -15px;
+    bottom: -8px;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #111111;
+
+    transform: rotate(45deg);
+}
+
+.lista-solicitudes {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tarjeta-solicitud {
+    width: 100%;
+    min-height: 250px;
+    padding: 30px 20px;
+
+    border: 2px solid #111111;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    box-sizing: border-box;
+}
+
+.imagen-solicitud {
+    width: 260px;
+    height: 165px;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+.informacion-solicitud {
+    flex: 1;
+}
+
+.informacion-solicitud h2 {
+    margin: 0 0 30px;
+
+    font-size: 31px;
+    line-height: 1.2;
+}
+
+.ubicacion-fecha {
+    margin: 0 0 28px;
+
+    color: #777777;
+    font-size: 18px;
+}
+
+.productos {
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.productos span {
+    min-width: 85px;
+    padding: 7px 15px;
+
+    border: 2px solid #111111;
+    border-radius: 20px;
+
+    color: #111111;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.boton {
+    padding: 10px 18px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+}
+
+.boton-detalles {
+    border: 2px solid #58a621;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.boton-detalles:hover {
+    background-color: #eef9e8;
+}
+
+.boton-ayudar {
+    border: 2px solid #4b901b;
+    background-color: #69af29;
+    color: #111111;
+}
+
+.boton-ayudar:hover {
+    background-color: #4b901b;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 105px;
+        height: 85px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .enlace-menu {
+        font-size: 20px;
+    }
+
+    .boton-sesion {
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+
+    .tarjeta-solicitud {
+        gap: 25px;
+    }
+
+    .imagen-solicitud {
+        width: 220px;
+        height: 155px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .menu {
+        width: 100%;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .contenido-principal {
+        padding-top: 25px;
+    }
+
+    .contenido-principal h1 {
+        font-size: 30px;
+    }
+
+    .buscador {
+        height: 58px;
+        padding: 0 18px;
+    }
+
+    .buscador input {
+        font-size: 19px;
+    }
+
+    .tarjeta-solicitud {
+        padding: 20px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 20px;
+    }
+
+    .imagen-solicitud {
+        width: 100%;
+        height: 210px;
+    }
+
+    .informacion-solicitud h2 {
+        margin-bottom: 18px;
+        font-size: 27px;
+    }
+
+    .ubicacion-fecha {
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .acciones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

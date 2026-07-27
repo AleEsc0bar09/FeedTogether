@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+/* Colores de marca */
+.bg-custom-green {
+    background-color: #4B8B2E !important;
+}
+
+.btn-custom-green {
+    background-color: #4B8B2E;
+    color: white;
+    border: none;
+}
+
+.btn-custom-green:hover {
+    background-color: #3f7526;
+    color: white;
+}
+
+.btn-custom-orange {
+    background-color: #E07A26;
+    color: white;
+    border: none;
+}
+
+.btn-custom-orange:hover {
+    background-color: #c96a1e;
+    color: white;
+}
+
+.text-custom-green {
+    color: #4B8B2E !important;
+}
+
+.text-custom-orange {
+    color: #E07A26 !important;
+}
+
+/* Seccion Hero */
+.hero {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Banner de Estadisticas */
+.stats-banner {
+    background-color: #4B8B2E;
+    border-radius: 12px;
+    padding: 25px;
+    color: white;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.stat-item h3 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.stat-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+/* Tarjetas */
+.card-custom {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-3px);
+}
+
+.badge-tag {
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+}

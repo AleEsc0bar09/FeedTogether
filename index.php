@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeedTogether</title>
 
-    <!-- Bootstrap 5 -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
     <?php include 'componentes/navbar.php'; ?>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
             <div class="row align-items-center g-4">
@@ -28,12 +26,12 @@
                         Plataforma que une comunidades, empresas y voluntarios para combatir el hambre en El Salvador.
                     </p>
                     <div class="d-flex gap-3">
-                        <a href="solicitudes.php" class="btn btn-custom-green btn-lg rounded-pill px-4">
-                            Quiero ayudar
-                        </a>
-                        <a href="registro.php" class="btn btn-custom-orange btn-lg rounded-pill px-4">
+                        <button onclick="mostrarOpciones()" class="btn btn-custom-green btn-lg rounded-pill px-4">
+                           Quiero ayudar
+                         </button>
+                        <button onclick="mostrarOpciones()" class="btn btn-custom-orange btn-lg rounded-pill px-4">
                             Necesito ayuda
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -44,7 +42,6 @@
         </div>
     </section>
 
-    <!-- ESTADÍSTICAS -->
     <section class="py-4">
         <div class="container">
             <div class="stats-banner shadow-sm">
@@ -90,7 +87,6 @@
         </div>
     </section>
 
-    <!-- SOLICITUDES RECIENTES -->
     <section class="py-5">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -144,7 +140,6 @@
         </div>
     </section>
 
-    <!-- SECCIÓN ¡ÚNETE A FEEDTOGETHER! -->
     <section class="py-5 bg-white">
         <div class="container text-center">
             <h2 class="fw-bold mb-2">¡Únete a FeedTogether!</h2>
@@ -163,7 +158,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div class="col-md-4">
                     <div class="card-custom p-4 h-100 d-flex flex-column justify-content-between">
                         <div>
@@ -175,7 +169,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div class="col-md-4">
                     <div class="card-custom p-4 h-100 d-flex flex-column justify-content-between">
                         <div>
@@ -194,7 +187,6 @@
 
     <?php include 'componentes/footer.php'; ?>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/script.js"></script>
 

@@ -9,7 +9,7 @@
 
     <!--css-->
     <link rel="styleesheet" href="css/css-comun-nav.css">
-    <link rel="stylesheet" href="css
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--bootstrap js-->
@@ -18,7 +18,19 @@
     <!--java-->
     <script src="javascript/script.js"></script>
 
-    
+        <header class="navbar">
+            <div>
+                <img class="logo" src="componentes/imag barra/logo.png" alt="logo">
+            </div>
+            <nav>
+                <a href="solicitudes.php">Solicitudes</a>
+                <a href="voluntariados.php">Voluntariados</a>
+                <button>Iniciar sesión</button>
+            </nav>
+        </header>
+        <main class="contenedor-dSol">
+
+        </main>
     
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap'); /*fuente titulos*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /*fuente texto normal*/
 
 /*main general*/
 main{
@@ -29,7 +28,7 @@ body{
 }
 
 .logo{
-    width: 500px;
+    width: 550px;
 }
 
 nav{

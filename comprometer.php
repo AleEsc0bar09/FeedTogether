@@ -29,7 +29,31 @@
             </nav>
         </header>
         <main class="contenedor-com">
-        
+
+
+
+
+
+            <form class="compromiso" action="/submit" method="post">
+                <h2 class="form-ayuda">Ayudémonos entre todos.</h2>
+                <br>
+                <label for="representante">¿A quién representa?</label>
+                <br>
+                <input type="radio" name="represent_type" id="repre" value="Comunidad">
+                <br>
+                <input type="radio" name="represent_type" id="repre" value="Organización">
+                <br>
+                <input type="radio" name="represent_type" id="repre" value="Empresa">
+                <br>
+                <input type="radio" name="represent_type" id="repre" value="Otro">
+                <br>
+                <label for="name-org">Nombre de quien representa:</label>
+                <br>
+                <input type="text" name="represent_name" id="name" required>
+                <br>
+                <label for="
+            </form>
+
         </main>
 
 

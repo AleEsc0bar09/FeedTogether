@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeedTogether</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body style="background-color: ;">
+    <h1 class="text-center mt-5 h1">¡Hora de crear tu nueva cuenta!</h1>
+
+    <div class="card m-3 rounded shadow">
+      <div class="row g-0">
+        <div class="card-body">
+          <form class="m-2">
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre completo</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nombreUsuario"
+                id="nombreUsuario"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text</small
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                name="emailRegistro"
+                id="emailRegistro"
+                aria-describedby="emailHelpId"
+                placeholder="email@mail.com"
+              />
+              <small id="emailHelpId" class="form-text text-body-secondary"
+                >Help text</small
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Número Telefonico</label>
+              <input
+                type="text"
+                class="form-control"
+                name="telRegistro"
+                id="telRegistro"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text</small
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                name="pwdRegistro"
+                id="pwdRegistro"
+                placeholder="********"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Acerca de ti</label>
+              <textarea
+                class="form-control bs-tooltip-auto"
+                name="aboutRegistro"
+                id="aboutRegistro"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Departamento</label>
+              <select
+                class="form-select form-select-lg"
+                name="departamentos"
+                id="departamentos"
+              >
+                <option value="">Selecciona un departamento...</option>
+                <option value="ahuachapan">Ahuachapán</option>
+                <option value="santa_ana">Santa Ana</option>
+                <option value="chalatenango">Chalatenango</option>
+                <option value="la_libertad">La Libertad</option>
+                <option value="san_salvador">San Salvador</option>
+                <option value="cuscatlan">Cuscatlán</option>
+                <option value="sonsonate">Sonsonate</option>
+                <option value="la_paz">La Paz</option>
+                <option value="cabañas">Cabañas</option>
+                <option value="san_vicente">San Vicente</option>
+                <option value="usulutan">Usulután</option>
+                <option value="san_miguel">San Miguel</option>
+                <option value="morazan">Morazán</option>
+                <option value="la_union">La Unión</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">municipio</label>
+              <select class="form-select form-select-lg" name="" id="">
+                <option value="">Selecciona un municipio...</option>
+                <!-- AHUACHAPÁN -->
+                <option value="ahuachapan_centro">Ahuachapán Centro</option>
+                <option value="ahuachapan_norte">Ahuachapán Norte</option>
+                <option value="ahuachapan_sur">Ahuachapán Sur</option>
+                <!-- CABAÑAS -->
+                <option value="cabanas_este">Cabañas Este</option>
+                <option value="cabanas_oeste">Cabañas Oeste</option>
+                <!-- CHALATENANGO -->
+                <option value="chalatenango_centro">Chalatenango Centro</option>
+                <option value="chalatenango_norte">Chalatenango Norte</option>
+                <option value="chalatenango_sur">Chalatenango Sur</option>
+                <!-- CUSCATLÁN -->
+                <option value="cuscatlan_norte">Cuscatlán Norte</option>
+                <option value="cuscatlan_sur">Cuscatlán Sur</option>
+                <!-- LA LIBERTAD -->
+                <option value="la_libertad_centro">La Libertad Centro</option>
+                <option value="la_libertad_costa">La Libertad Costa</option>
+                <option value="la_libertad_este">La Libertad Este</option>
+                <option value="la_libertad_norte">La Libertad Norte</option>
+                <option value="la_libertad_oeste">La Libertad Oeste</option>
+                <option value="la_libertad_sur">La Libertad Sur</option>
+                <!-- LA PAZ -->
+                <option value="la_paz_centro">La Paz Centro</option>
+                <option value="la_paz_este">La Paz Este</option>
+                <option value="la_paz_oeste">La Paz Oeste</option>
+                <!-- LA UNIÓN -->
+                <option value="la_union_centro">La Unión Centro</option>
+                <option value="la_union_norte">La Unión Norte</option>
+                <option value="la_union_sur">La Unión Sur</option>
+                <!-- MORAZÁN -->
+                <option value="morazan_norte">Morazán Norte</option>
+                <option value="morazan_sur">Morazán Sur</option>
+                <!-- SAN MIGUEL -->
+                <option value="san_miguel_centro">San Miguel Centro</option>
+                <option value="san_miguel_norte">San Miguel Norte</option>
+                <option value="san_miguel_oeste">San Miguel Oeste</option>
+                <!-- SAN SALVADOR -->
+                <option value="san_salvador_centro">San Salvador Centro</option>
+                <option value="san_salvador_este">San Salvador Este</option>
+                <option value="san_salvador_norte">San Salvador Norte</option>
+                <option value="san_salvador_oeste">San Salvador Oeste</option>
+                <option value="san_salvador_sur">San Salvador Sur</option>
+                <!-- SAN VICENTE -->
+                <option value="san_vicente_centro">San Vicente Centro</option>
+                <option value="san_vicente_norte">San Vicente Norte</option>
+                <option value="san_vicente_sur">San Vicente Sur</option>
+                <!-- SANTA ANA -->
+                <option value="santa_ana_centro">Santa Ana Centro</option>
+                <option value="santa_ana_este">Santa Ana Este</option>
+                <option value="santa_ana_norte">Santa Ana Norte</option>
+                <option value="santa_ana_oeste">Santa Ana Oeste</option>
+                <!-- SONSONATE -->
+                <option value="sonsonate_centro">Sonsonate Centro</option>
+                <option value="sonsonate_este">Sonsonate Este</option>
+                <option value="sonsonate_norte">Sonsonate Norte</option>
+                <option value="sonsonate_oeste">Sonsonate Oeste</option>
+                <!-- USULUTÁN -->
+                <option value="usulutan_centro">Usulután Centro</option>
+                <option value="usulutan_este">Usulután Este</option>
+                <option value="usulutan_norte">Usulután Norte</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Sube una imagen</label>
+              <input
+                type="file"
+                class="form-control"
+                name=""
+                id=""
+                placeholder=""
+                aria-describedby="fileHelpId"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btnRegistro"
+            >
+              Crear cuenta
+            </button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
